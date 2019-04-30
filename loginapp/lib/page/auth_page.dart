@@ -31,6 +31,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
         keyboardType: TextInputType.emailAddress,
         autofocus: false,
         decoration: new InputDecoration(
+            hintStyle: TextStyle(fontSize: 20.0, color: Colors.black),
             hintText: 'Email',
             icon: new Icon(
               Icons.mail,
@@ -55,6 +56,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
               keyboardType: TextInputType.text,
               autofocus: false,
               decoration: new InputDecoration(
+                  hintStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                   hintText: 'Name',
                   icon: new Icon(
                     Icons.person,
@@ -80,6 +82,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
               keyboardType: TextInputType.phone,
               autofocus: false,
               decoration: new InputDecoration(
+                  hintStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                   hintText: 'Phone',
                   icon: new Icon(
                     Icons.phone,
@@ -104,6 +107,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
         obscureText: true,
         autofocus: false,
         decoration: new InputDecoration(
+            hintStyle: TextStyle(fontSize: 20.0, color: Colors.black),
             hintText: 'Password',
             icon: new Icon(
               Icons.lock,
@@ -128,6 +132,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
               obscureText: true,
               autofocus: false,
               decoration: new InputDecoration(
+                  hintStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                   hintText: 'Confirm Password',
                   icon: new Icon(
                     Icons.lock_open,
@@ -287,10 +292,15 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
     return new FlatButton(
       child: _formMode == FormMode.SIGNUP
           ? new Text('Already have an Account? Login',
-              style: new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300))
+              style: new TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w300,
+                  color: Colors.black))
           : new Text('Don\'t have any account? Register',
-              style:
-                  new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300)),
+              style: new TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w300,
+                  color: Colors.black)),
       onPressed: () {
         // _submitsignupForm();
         setState(() {
